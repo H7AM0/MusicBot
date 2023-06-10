@@ -9,12 +9,12 @@ admins = {}
 SESSION_NAME = getenv("SESSION_NAME", "")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
-API_ID = int(getenv("API_ID", "8186557"))
-API_HASH = getenv("API_HASH", "efd77b34c69c164ce158037ff5a0d117")
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "AbishnoiMF")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Abishnoi_bots")
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5938660179").split()))
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5938660179").split()))
+API_ID = int(getenv("API_ID", "28207006"))
+API_HASH = getenv("API_HASH", "c32d858dc08e0b24350af23b2fb5bcb8")
+GROUP_SUPPORT = getenv("GROUP_SUPPORT", "shafeyChat")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "SOURCE_HAMO")
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5592599675").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5592599675").split()))
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "120"))
 
 IMG_1 = getenv("IMG_1", "https://te.legra.ph/file/31e9ecee16a46575267a4.jpg")
