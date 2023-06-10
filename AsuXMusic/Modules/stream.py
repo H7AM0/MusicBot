@@ -5,11 +5,13 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-
+import os
 from AsuX import stream_markup
+from AsuX.PNG import thumb
 from AsuX.decorators import authorized_users_only
 from AsuX.filters import command, other_filters
 from AsuX.queues import QUEUE, clear_queue
+from AsuX.chatname import CHAT_TITLE
 from AsuX.utils import skip_current_song, skip_item
 from AsuXMusic import BOT_USERNAME
 from AsuXMusic import bot as Abishnoi
@@ -20,7 +22,9 @@ bttn = InlineKeyboardMarkup(
     [[InlineKeyboardButton("🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="cbmenu")]]
 )
 
-
+def remove_if_exists(path):
+    if os.path.exists(path):
+        os.remove(path)
 bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🤺 ᴄʟᴏsᴇ", callback_data="cls")]])
 
 

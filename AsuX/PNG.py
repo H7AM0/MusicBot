@@ -2,7 +2,7 @@ import aiofiles
 import aiohttp
 import ffmpeg
 from PIL import Image, ImageDraw, ImageFont
-
+import os
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
 useer = "NaN"

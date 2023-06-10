@@ -1,7 +1,7 @@
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls import StreamType
-from pytgcalls.types.input_stream import AudioImagePiped
+from pytgcalls.types.input_stream import AudioImagePiped,AudioPiped
 from pytgcalls.types.input_stream.quality import MediumQualityVideo
 from youtubesearchpython import VideosSearch
 
@@ -14,7 +14,7 @@ from AsuXMusic import BOT_USERNAME
 from AsuXMusic import Abishnoi as user
 from AsuXMusic import bot as Abishnoi
 from AsuXMusic import call_py
-from AsuXMusic.config import IMG_1, IMG_2, IMG_5
+from AsuXMusic.config import IMG_1, IMG_2, IMG_5,ASSISTANT_USERNAME
 
 
 def ytsearch(query):
