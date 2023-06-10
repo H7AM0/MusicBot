@@ -1,0 +1,42 @@
+{
+  "name": "ᴀsᴜx ᴍᴜsɪᴄ",
+  "logo": "https://te.legra.ph/file/89762ac8329b6ce5c9e52.jpg",
+  "description": "A Fast & Powerful VC Player bot to play songs in Telegram Video Chat written in Python with the help of Pyrogram & PyTg-Calls.",
+  "keywords": ["music", "voicechat", "python", "telegram-bot", "pyrogram", "telegram", "AsuX"],
+  "repository": "https://github.com/Abishnoi69/AsuXMusic",
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "ᴀ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @Botfather",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ᴏғ ᴛʜᴇ ᴘᴇʀsᴏɴ ᴡʜᴏ ᴡɪʟʟ ᴋɴᴏᴡɴ ᴀs ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.",
+      "value": "5938660179",
+      "required": true
+    },
+    "SESSION_NAME": {
+      "description": "ᴘʏʀᴏɢʀᴀᴍ- v1 sᴛʀɪɴɢ sᴇssɪᴏɴ ᴏғ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ",
+      "required": true,
+      "value": ""
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
