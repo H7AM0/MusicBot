@@ -29,7 +29,6 @@ import yt_dlp
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-import config
 def time_to_seconds(time):
     stringt = str(time)
     return sum(
