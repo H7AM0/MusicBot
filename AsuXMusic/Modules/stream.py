@@ -17,7 +17,7 @@ from AsuXMusic import BOT_USERNAME
 from AsuXMusic import bot as Abishnoi
 from AsuXMusic import call_py
 from AsuXMusic.config import IMG_3, IMG_5
-
+from AsuX.admins import *
 bttn = InlineKeyboardMarkup(
     [[InlineKeyboardButton("🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="cbmenu")]]
 )
@@ -31,12 +31,11 @@ bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🤺 ᴄʟᴏsᴇ", callback_
 @Abishnoi.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
 async def update_admin(client, message):
-    global admins
     new_admins = []
     new_ads = await client.get_chat_members(message.chat.id, filter="administrators")
     for u in new_ads:
         new_admins.append(u.user.id)
-    admins[message.chat.id] = new_admins
+    set(message.chat.id,new_admins)
     await message.reply_text(
         "✅ ʙᴏᴛ **ʀᴇʟᴏᴀᴅᴇᴅ ᴄᴏʀʀᴇᴄᴛʟʏ !**\n✅ **ᴀᴅᴍɪɴ ʟɪsᴛ** ʜᴀs **ᴜᴘᴅᴀᴛᴇᴅ !**"
     )

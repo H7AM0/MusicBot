@@ -23,4 +23,3 @@ wget
 pyyaml==5.4
 python-arq
 bs4
-pykeyboard
